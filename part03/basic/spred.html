@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스프레드 연산자(...)</title>
+</head>
+<body>
+    <script>
+        let no01 = [1,2,3];
+        let no02 = [4,5,6];
+        let noHap = [...no01,...no02];
+        console.log(noHap);
+        console.log(no02);
+
+        //구조분해
+        let num = [1,2,3,4,5,6];
+        let [one,two,...rest] = num;
+        console.log(one);
+        console.log(two);
+        console.log(rest);
+    </script>
+</body>
+</html>
