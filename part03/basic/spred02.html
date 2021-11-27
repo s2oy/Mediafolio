@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스프레드 연산자2 구조화</title>
+</head>
+<body>
+    <script>
+        let myCar = {
+            brand: 'brand01',
+            model: 'model01',
+            color: 'red'
+        }
+        let myHouse = {
+            type: 'house',
+            year: '2000',
+            color: 'yellow'
+        }
+        let myUpdata = {
+            ...myCar,...myHouse
+        }
+        console.log(myUpdata);
+    </script>
+</body>
+</html>
