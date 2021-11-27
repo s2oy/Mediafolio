@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    
+  </head>
+  <body>
+    <script>
+//class  만들기
+class Student{
+  constructor(people,no01,no02,no03){
+    this.people = people
+    this.no01 = no01
+    this.no02 = no02
+    this.no03 = no03
+  }
+  // 메서드
+
+  // 총합
+  getSum(){
+    return this.no01 + this.no02 + this.no03
+  }
+  // 평균
+  getAverage(){
+    return this.getSum()/3
+  }
+  // 출력
+  getString(){
+    `${this.people}\t ${this.getSum()}\t ${this.getAverage()} 점\n`
+  }
+}
+
+// 인스턴스 만들기
+// let student = [new Student(), new Student(), new Student()]
+let students = [];
+
+// 학생 리스트 선언하기
+students.push(new Student('영희',90,80,70));
+students.push(new Student('철수',60,40,80));
+students.push(new Student('순희',80,88,75));
+
+//출력하기
+let output = `이름\t 총점\t 평균\n`
+for(let num of students){
+  output += num.getString();
+}
+console.log(output);
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>객체 구조화</title>
+</head>
+<body>
+	<div id="demo"></div>
+	<script>
+		let velOne = {
+			brand:'brand01',
+			model:'model01',
+			type:'type01',
+			year:2021,
+			color:'red'
+		}
+
+		myVel(velOne);
+
+		function myVel({brand,type,color}){
+			let mess = `나의 ${type}은 칼라는 ${color} 이고요 ${brand} 입니다.`
+			document.getElementById('demo').innerHTML = mess;
+		}
+	</script>
+</body>
+</html>

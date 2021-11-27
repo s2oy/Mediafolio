@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>class 상속</title>
+</head>
+<body>
+<script>
+// 부모  만들기
+  class Rect{
+	  constructor(width, height){
+		  this.width = width
+		  this.height = height
+	  }
+	  //메서드
+	  getPer(){
+		  return 2*(this.width + this.height);
+	  }
+	  getArea(){
+		  return (this.width * this.height);
+	  }
+  }
+// 자식  만들기
+class Square extends Rect{
+	constructor(leng){
+		super(leng,leng);
+	}
+}
+// //인스턴스  만들기
+const square = new Square(10,20);
+console.log(square.getArea());
+// let rect = new Rect(10, 20);
+// console.log(rect.getPer());
+</script>
+</body>
+</html>
