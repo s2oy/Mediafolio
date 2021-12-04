@@ -1,0 +1,61 @@
+@charset "utf-8";
+div#wrap{
+	position:fixed; 
+	left:0; 
+	top:0;		
+	width:100%; 
+	height:100%;		
+	background:red; 
+	font-size:3em; 
+	color:#fff;
+}
+
+@media screen and (min-width: 1280px) {
+	div#wrap{
+		background: url('../images/check.png') repeat;
+		color: white;
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+	div#wrap{
+		background: url('../images/cloud.png') repeat-y;
+		color: orange;
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 750px) {
+	div#wrap{
+		background: url('../images/rabbit.png') no-repeat;
+		color: yellow;
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 749px) and (min-width: 580px) {
+	div#wrap{
+		background: url('../images/sun.png') repeat-y;
+		color: green;
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 580px){
+	div#wrap{
+		background: url('../images/tree.png') no-repeat;
+		color: #666;
+		font-size: 1,6em;
+	}
+}
+
+
+
+
+
+
+
+
+
+
