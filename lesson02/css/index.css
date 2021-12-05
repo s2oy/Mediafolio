@@ -39,6 +39,7 @@ div>article>h3{
     color: #333;
     margin-bottom: 50px;
     width:100%;
+    padding-top: 70px;
 }
 
 /* header */
@@ -154,3 +155,260 @@ p#btn>span:nth-child(5){top:88%;}
     border-radius: 50%;
 }
 
+#box01>article>ul>li>dl>dt{
+    margin-bottom:11px;
+    font-weight:bold;
+}
+
+/* #box02 */
+
+#box02{
+    background-color: #e8e8e8;
+}
+
+/* info */
+#info{
+    margin-bottom: 68px;
+    overflow: hidden;
+}
+
+#info>h4{
+    margin-top: 25px;
+    float:left;
+    width:290px; 
+    height:190px;
+    margin-left: 30px;
+}
+
+#info>ul{
+    float:right;
+    width:628px;
+    margin-right:106px;
+}
+
+#info>ul>li{
+    /* width: auto; */
+    margin-bottom: 19px;
+    position: relative;
+    padding-left: 160px;
+    font:18px/33px '나눔고딕', sans-serif;
+    border-bottom:1px dotted #333;
+}
+
+#info>ul>li:nth-last-child(){
+    margin-bottom: 0;
+}
+
+#info>ul>li>dfn{
+    display:block;
+    width: 160px;
+    position:absolute;
+    left:0; top:0;
+    font-style: normal;
+}
+
+#info>ul>li>span{
+    width:auto;
+    display:block;
+}
+
+/* skill */
+#skill{
+    overflow: hidden;
+}
+#skill>h4{
+    float:left;
+    font:bold 30px Arial, sans-serif;
+    margin-left: 97px;
+}
+
+#skill>ul{
+    float:right;
+    width:628px;
+    margin-right: 106px;
+    padding-bottom: 70px;
+}
+
+#skill>ul>li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 160px;
+}
+
+#skill>ul>li:last-child{
+    margin-bottom: 0px;
+}
+
+#skill>ul>li>dfn{
+    display: block;
+    width: 160px;
+    position: absolute;
+    left:0;
+    top:0;
+    font: bold 18px/32px '나눔고딕',Arial,sans-serif;
+    font-style: normal;
+}
+
+#skill>ul>li>span{
+    display: block;
+    width: 100%;
+    height:30px;
+    background: #000 url('../images/bar.gif') no-repeat left top;
+    background-size: 80%;
+    text-indent: -9999px;
+}
+
+#skill>ul>li:nth-child(1)>span{
+    background-size: 90% 100%;
+}
+#skill>ul>li:nth-child(2)>span{
+    background-size: 12% 100%;
+}
+#skill>ul>li:nth-child(3)>span{
+    background-size: 43% 100%;
+}
+#skill>ul>li:nth-child(4)>span{
+    background-size: 65% 100%;
+}
+#skill>ul>li:nth-child(5)>span{
+    background-size: 34% 100%;
+}
+
+/* Portfolio */
+#box03{
+    padding-bottom:0;
+}
+
+#box03>article>ul{
+    margin-bottom:68px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    
+}
+
+#box03>article>ul>li{
+    display:inline-block;
+    padding:0 18px;
+    border-left:1px solid #666;
+    
+}
+
+#box03>article>ul>li:first-child{
+    border-left:0;
+}
+
+#box03>article>ul>li>a{
+    font-size: 18px;
+    color: #666;
+}
+
+#show{
+    /* width:auto; */
+}
+
+#all{
+    /* width:auto; */
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#all>figure{
+    width:33.333333%;
+    text-align:center;
+    margin-bottom: 73px;
+}
+
+#all>figure>img{
+    width: 258px;
+    border-radius: 50%;
+    margin-bottom: 27px;
+}
+
+#all>figure>figcaption{
+
+}
+
+/* box04 */
+#box04{
+    background-color: #f93c64;
+}
+
+#box04>article>h3{
+    color:#fff;
+}
+
+#box04 form{
+    width:1053px;
+    margin: 0 auto;
+}
+
+#box04 form ul{
+
+}
+
+#box04 form ul>li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 198px;
+}
+#box04 form ul>li>label{
+    position: absolute;
+    left:0; top:0;
+    width:198px;
+    display: block;
+    padding-left: 78px;
+    font:bold 24px/50px Arial,sans-serif;
+    color:#fff;
+    background: url('../images/contact_icon_01.png') no-repeat 30px center;
+}
+
+#box04 form ul>li:nth-child(2)>label{ 
+    background-image: url('../images/contact_icon_02.png');
+}
+#box04 form ul>li:nth-child(3)>label{
+    background-image: url('../images/contact_icon_03.png')
+ }
+#box04 form ul>li:nth-child(4)>label{
+    background-image: url('../images/contact_icon_04.png')
+ }
+#box04 form ul>li>input{
+    width:100%;
+    height: 59px;
+    border:none;
+    box-sizing: border-box;
+    font: 24px/50px Arial,sans-serif;
+    text-indent: 25px;
+}
+#box04 form ul>li>textarea{
+    width:100%;
+    height:164px;
+    box-sizing: border-box;
+    border:none;
+    font:24px/50px Arial,sans-serif;
+    text-indent: 25px;
+}
+
+#box04 p{
+    text-align: right;
+}
+
+#box04 p>input{
+    width:125px;
+    height:45px;
+    border:none;
+    box-sizing:border-box;
+    background-color:orange;
+    font-size: 24px;
+    color: #fff;
+    border-radius:8px;
+    margin-bottom:28px;
+}
+
+#footerWrap{
+    background-color: #333;
+    padding:44px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}

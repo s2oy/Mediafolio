@@ -52,6 +52,7 @@ q:before, q:after {
 }
 
 a {
+    text-decoration: none;
     margin:0;
     padding:0;
     font-size:100%;
@@ -102,7 +103,7 @@ input, select {
     vertical-align:middle;
 }
 
-/* –{‘ƒTƒ“ƒvƒ‹—p‚ÉˆÈ‰º‚ÌƒR[ƒh‚ğ’Ç‰Á‚µ‚Ä‚¢‚Ü‚·B */
+/* ï¿½{ï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½vï¿½ï¿½ï¿½pï¿½ÉˆÈ‰ï¿½ï¿½ÌƒRï¿½[ï¿½hï¿½ï¿½Ç‰ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B */
 ol, ul {
     list-style: none;
 }
