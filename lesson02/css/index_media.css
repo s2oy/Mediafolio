@@ -2,11 +2,18 @@
 @media screen and (min-width:1160px){
     #wrap>div>article,#wrap>div>header,#wrap>div>footer{
         width:1160px;
-    }   
+    }
+    
+    aside>ul{
+        display:none;
+    }
 }
 
 @media screen and (max-width:1159px) and (min-width:980px){
     /*  통과  */
+    aside>ul{
+        display:none;
+        }
 }
 
 @media screen and (max-width:979px) and (min-width:580px){
@@ -25,7 +32,7 @@
         padding-top:0;
         position:fixed;
         left:-390px; top:0;
-        z-index:99999;
+        z-index:80000;
         width:390px;
         height:100vh;
         padding:0 25px;
@@ -144,7 +151,66 @@ div#box02>article>h3{
     width:100%;
     border-radius:0px;
 }
-/*  */
+ /* modal */
+ #modal{
+    width:100vw;
+    height:100vh;
+}
+
+#modal>p{
+    position: absolute;
+    right:4vw;
+    top:4vh;
+    /* width:13vw;
+    height:13vh; */
+    /* background-color: red; */
+}
+
+#modal>div{
+    position: fixed;
+    left:10vw;
+    top: 10.25vh;
+    width: 80vw;
+    height: 84.5vh;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+
+
+#modal>div>h4{
+    text-align: center;
+    /* 16~18 본문, 24px, 제목 24 `-> 56 */
+    font: bold 18px '나눔고딕', sans-serif;
+    color: #666;
+    /* margin-bottom: 36px; */
+    margin-bottom: 2.5vh;
+    padding-top: 2.5vh;
+}
+#modal>div>figure{
+    width: 100%;
+    float: none;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+#modal>div>ul{
+    width:80%;
+    float:none;
+    margin:0 auto;
+}
+#modal>div>ul>li{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding-top: 3vh;
+}
+
+/* 서브메뉴 */
+aside>ul{
+    display:none;
+    }
+
 }
 
 @media screen and (max-width:579px){
@@ -184,7 +250,7 @@ header>nav{
     position:fixed;
     left:-100vw; top:0;
     background-color:rgba(21, 3, 24, 0.85);
-    z-index:99999;
+    z-index:80000;
     padding:25vh 15vw 0;
     box-sizing:border-box;
 }
@@ -304,4 +370,69 @@ p#btn{
         width:100%;
         border-radius: 0%;
     }
+   /* modal */
+ #modal{
+    width:100vw;
+    height:100vh;
+}
+
+#modal>p{
+    position: absolute;
+    right:4vw;
+    top:4vh;
+    /* width:13vw;
+    height:13vh; */
+    /* background-color: red; */
+}
+
+#modal>div{
+    position: fixed;
+    left:10vw;
+    top: 10.25vh;
+    width: 80vw;
+    height: 84.5vh;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+
+
+#modal>div>h4{
+    text-align: center;
+    /* 16~18 본문, 24px, 제목 24 `-> 56 */
+    font: bold 18px '나눔고딕', sans-serif;
+    color: #666;
+    /* margin-bottom: 36px; */
+    margin-bottom: 2.5vh;
+    padding-top: 2.5vh;
+}
+#modal>div>figure{
+    width: 100%;
+    float: none;
+    margin-bottom: 2.5vh;
+    text-align: center;
+}
+#modal>div>ul{
+    width:80%;
+    float:none;
+    margin:0 auto;
+}
+#modal>div>ul>li{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #666;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-top: 1.5vh;
+    padding-top: 0.5vh;
+}
+#modal>div>ul>li>dfn{
+    display: block;
+    width: 40%;
+}
+/* 서브메뉴 */
+aside>ul{
+display:none;
+}
+   
 }
