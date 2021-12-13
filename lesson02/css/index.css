@@ -381,112 +381,111 @@ p#btn>span:nth-child(5){top:88%}
     color:#fff;
 }
 
-/* aside:submenu */
+/* aside: submemu */
 aside>ul{
-    position: fixed;
-    right: 25px;
+    position:fixed;
+    right:25px;
     top:50%;
-    z-index: 999999;
+    z-index:80000;
 }
 aside>ul>li{
-    margin-bottom: 25px;
+    margin-bottom:25px;
 }
 aside>ul>li>a{
-    display: block;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-sizing: 2px 2px 3px rgba(0,0,0,0.8);
-    text-indent: -9999px;
+    display:block;
+    width:45px; height:45px;
+    border-radius:50%;
+    background-color:#fff;
+    box-shadow:2px 2px 3px rgba(0,0,0,0.8);
+    text-indent:-9999px;
 }
 aside>ul>li>a:hover{
-    background-color: green;
+    background-color:green;
+    /* text-indent:0px; */
 }
 aside>#top{
-    position: fixed;
+    position:fixed;
     right:25px; bottom:35px;
-    width: 45px; height: 45px;
-    line-height: 45px;
+    z-index:70000;
 }
 aside>#top>a{
-    display: block;
-    width: 45px;
-    height: 45px;
+    display:block;
+    width:45px; height:45px;
+    line-height:45px;
+    text-align:center;
+    background-color:#ddd;
+    color:red;
 }
 
-/* #modal */
+/* modal */
 #modal{
     position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
+    left:0; top:0;
+    width:100%; height:100%;
     background-color:rgba(0,0,0,0.9);
-    z-index: 9999;
+    z-index:99999;
+    display:none;
 }
-
 #modal>p{
-    position: absolute;
-    right:100px;
-    top:100px;
-    width:35px;
-    height:35px;
-    /* background-color: red; */
+    position:absolute;
+    right:100px; top:100px;
+    width:35px; height:35px;
+    /* background-color:red; */
 }
-
 #modal>p>span{
-    display: block;
-    position: absolute;
-    width:100%;
-    height: 2px;
-    left:0;
-    top:50%;
-    background-color: #fff;
+    display:block;
+    position:absolute;
+    width: 100%;
+    height:2px;
+    left:0; top:50%;
+    background-color:#fff;
 }
-
 #modal>p>span:nth-child(1){
-    transform: rotate(-135deg) translateX(0%);
+transform:rotate(-135deg) translateX(0%);
 }
 #modal>p>span:nth-child(2){
-    transform: rotate(-45deg) translateY(0%);
+transform:rotate(-45deg) translateX(0%);
 }
 #modal>div{
-    position: fixed;
-    left:50%;
-    top:50%;
+    position:fixed;
+    left:50%; top:50%;
     width:980px;
     padding:35px;
     margin: -300px 0 0 -490px;
-    background-color: #fff;
-    overflow: hidden;
-    /* flex-wrap: wrap; */
+    background-color:#fff;
+    overflow:hidden;
+    /* display:flex;
+    flex-wrap:wrap; */
 }
 #modal>div>h4{
-    text-align: center;
-    /* 16~18 본문, 24px, 제목 24 `-> 56 */
-    font: bold 18px '나눔고딕', sans-serif;
-    color: #666;
-    margin-bottom: 36px;
+    text-align:center;
+    /* 16~18 본문, 24px , 제목 24 -> 56 */
+    font:bold 18px '나눔고딕',sans-seriif;
+    color:#666;
+    margin-bottom:36px;
 }
 #modal>div>figure{
-    width: 40%;
-    float: left;
+    width:40%;
+    float:left;
 }
 #modal>div>ul{
     width:50%;
     float:right;
 }
 #modal>div>ul>li{
-    margin-bottom: 20px;
-    border-bottom: 1px solid #666;
-    display: flex;
-    /* flex-wrap: wrap; */
+    margin-bottom:20px;
+    border-bottom:1px solid #666;
+    display:flex;
+    line-height:30px;
+    /* flex-wrap:wrap; */
 }
 #modal>div>ul>li>dfn{
-    display: block;
-    width: 25%;
+    display:block;
+    font-style:normal;
+    width:25%;
+    
 }
 #modal>div>ul>li>span{
-    display: block;
+    display:block;
+    
 }
