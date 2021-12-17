@@ -48,7 +48,25 @@ function navBtn(){
 // 
 function gallery(){
 //  준비하기
-
+    let figureW = $('#all>figure').width();
+    console.log(figureW);
+    $('#all>figure:last').prependTo('#show');
+    $('#all').css('margin-left','-'+figureW+'px');
 //  .left  .right
+    $('#box03 .left').on('click', function(){
+        $('#all').animate({marginLeft: '-='+figureW+'px'},800,function(){
+            $('#all>figure:first').prependTo('#all');
+            $('#all').css('margin-left','-'+figureW+'px');
+        });
+    });
+    $('#box03 .right').on('click',function(){
+        $('#all').animate({marginLeft: '+='+figureW+'px'},800,function(){
+            $('#all>figure:first').prependTo('#all');
+            $('#all').css('margin-left','-'+figureW+'px');
+        });
+    });
+}
 
+function formData(){
+    
 }

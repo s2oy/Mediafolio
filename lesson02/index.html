@@ -262,7 +262,13 @@
     navBtn();
     
     //  gallery ani
-    gallery();
+    let widdowW = $('#wrap').width();
+    if(windowW<980){
+     gallery();
+    }
+    if(widdowW<580){
+        formData();
+    }
     });
 </script>
 </body>
