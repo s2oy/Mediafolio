@@ -68,5 +68,15 @@ function gallery(){
 }
 
 function formData(){
-    
+    let $liForm = $('#box04 li>input, #box04 li>textarea');
+    $liForm.removeAttr('placeholder');
+    $liForm.on('focus',function(e){
+        $(this).prev('label').fadeOut(400);
+    });
+    $liForm.on('blur',function(e){
+        let str = $(this).val();
+        if(str == ""){
+            $(this).prev('label').fadeIn(400);
+        }
+    });
 }
