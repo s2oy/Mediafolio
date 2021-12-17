@@ -139,23 +139,23 @@
             <div id="show">
                 <div id="all">
                     <figure>
-                        <img src="images/pic01.png" alt="작품명">
+                        <img src="images/pic01.png" alt="작품명" name="0">
                         <figcaption>title01</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/pic02.png" alt="작품명">
+                        <img src="images/pic02.png" alt="작품명" name="1">
                         <figcaption>title01</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/pic03.png" alt="작품명">
+                        <img src="images/pic03.png" alt="작품명" name="2">
                         <figcaption>title01</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/pic04.png" alt="작품명">
+                        <img src="images/pic04.png" alt="작품명" name="3">
                         <figcaption>title01</figcaption>
                     </figure>
                     <figure>
-                        <img src="images/pic01.png" alt="작품명">
+                        <img src="images/pic01.png" alt="작품명" name="4">
                         <figcaption>title01</figcaption>
                     </figure>
                     <figure>
@@ -178,21 +178,21 @@
                     <ul>
                         <li>
                             <dfn>제작년도</dfn>
-                            <span>text01</span>
+                            <span class="year">text01</span>
                         </li>
                         <li>
                             <dfn>사용프로그램</dfn>
-                            <span>text02</span>
+                            <span class="program">text02</span>
                         </li>
                         <li>
                             <dfn>주소</dfn>
-                            <span>
+                            <span class="href">
                                 <a href="#">http://자신의 주소</a>
                             </span>
                         </li>
                         <li>
                             <dfn>설명</dfn>
-                            <span>text03</span>
+                            <span class="text02">text03</span>
                         </li>
                     </ul>
                 </div>
@@ -269,7 +269,11 @@
     if(widdowW<580){
         formData();
     }
+    $(window).on('resize',function(){
+        window.location.reload();
+    })
     });
 </script>
+<script src="./js/modal.js"></script>
 </body>
 </html>
