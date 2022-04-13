@@ -337,15 +337,20 @@ p#btn > span:nth-child(5) {
   position: absolute;
   width: 35px;
   height: 35px;
-  background-color: red;
+  background-color: rgb(159, 159, 159);
+
   /*  top jquery  계산식 */
   top: 50%;
   display: none;
 }
 #box03 .left {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
   left: 0;
 }
 #box03 .right {
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
   right: 0;
 }
 
